@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bean & Brew Coffee Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/icon.png" alt="Logo Icon" class="logo-icon" />
+          BeanBoutique
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="menu" id="navMenu">
+          <li>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li><a href="coffee-selection.html">Coffee Selection</a></li>
+          <li><a href="equipment.html">Brewing Equipment</a></li>
+          <li>
+            <a href="#">Services ⏷</a>
+            <div class="dropdown">
+              <a href="events.html">Events and Workshops</a>
+              <a href="offers.html">Special Offers and Scriptions</a>
+            </div>
+          </li>
+          <li>
+            <a href="cart.html">
+              <i class="fa-solid fa-cart-shopping"></i> Shopping Cart</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/Americano.jpg" alt="Slide 1" />
+            <div class="swiper-text">
+              <h1>Fresh Coffee Beans</h1>
+              <p>Experience the rich taste of fresh coffee.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/Americano.jpg" alt="Slide 2" />
+            <div class="swiper-text">
+              <h1>Fresh Coffee Beans</h1>
+              <p>Experience the rich taste of fresh coffee.</p>
+            </div>
+          </div>
+            <div class="swiper-slide">
+              <img src="images/Americano.jpg" alt="Slide 3" />
+              <h1>Fresh Coffee Beans</h1>
+              <p>Experience the rich taste of fresh coffee.</p>
+            </div>
+          </div>
+            <div class="swiper-slide">
+              <img src="images/Americano.jpg" alt="Slide 4" />
+              <h1>Fresh Coffee Beans</h1>
+              <p>Experience the rich taste of fresh coffee.</p>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <div>
+            <h2>Freshly brewed every day</h2>
+            <h1>Your favorite coffee, made with love.</h1>
+            <p>
+              Choose your favorite drinks and snacks, add them to your cart, and
+              place your order easily.
+            </p>
+          </div>
+          <!-- <div class="hero-cup">☕</div> -->
+        </div>
+      </section>
+
+      <div id="offerModal" class="modal-overlay">
+        <div class="modal-content">
+          <button class="close-btn" id="closeModal">&times;</button>
+          <h2>Special First-Time Offer!</h2>
+          <p>Sign up now to get 10% off your first purchase.</p>
+
+          <form id="offerForm">
+            <div class="input-group">
+              <label for="userName">Name</label>
+              <input
+                type="text"
+                id="userName"
+                required
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="input-group">
+              <label for="userEmail">Email</label>
+              <input
+                type="email"
+                id="userEmail"
+                required
+                placeholder="Enter your email"
+              />
+            </div>
+            <button type="submit" class="submit-btn">Get Discount</button>
+          </form>
+        </div>
+      </div>
+
+      <p>
+        There are around 10,000 living species of birds. Birds are a group of
+        warm-blooded vertebrate animals constituting the class Aves,
+        characterised by feathers, toothless beaked jaws, the laying of
+        hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a
+        strong yet lightweight skeleton. align="top" /> There are around 10,000
+        living species of birds. Birds are a group of warm-blooded vertebrate
+        animals constituting the class Aves, characterised by feathers,
+        toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic
+        rate, a four-chambered heart, and a strong yet lightweight skeleton.
+      </p>
+      <p>
+        There are around 10,000 living species of birds. Birds are a group of
+        warm-blooded vertebrate animals constituting the class Aves,
+        characterised by feathers, toothless beaked jaws, the laying of
+        hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a
+        strong yet lightweight skeleton. align="top" /> There are around 10,000
+        living species of birds. Birds are a group of warm-blooded vertebrate
+        animals constituting the class Aves, characterised by feathers,
+        toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic
+        rate, a four-chambered heart, and a strong yet lightweight skeleton.
+      </p>
+      <p>
+        There are around 10,000 living species of birds. Birds are a group of
+        warm-blooded vertebrate animals constituting the class Aves,
+        characterised by feathers, toothless beaked jaws, the laying of
+        hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a
+        strong yet lightweight skeleton. align="top" /> There are around 10,000
+        living species of birds. Birds are a group of warm-blooded vertebrate
+        animals constituting the class Aves, characterised by feathers,
+        toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic
+        rate, a four-chambered heart, and a strong yet lightweight skeleton.
+      </p>
+      <p>
+        There are around 10,000 living species of birds. Birds are a group of
+        warm-blooded vertebrate animals constituting the class Aves,
+        characterised by feathers, toothless beaked jaws, the laying of
+        hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a
+        strong yet lightweight skeleton. align="top" /> There are around 10,000
+        living species of birds. Birds are a group of warm-blooded vertebrate
+        animals constituting the class Aves, characterised by feathers,
+        toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic
+        rate, a four-chambered heart, and a strong yet lightweight skeleton.
+      </p>
+      <p>
+        There are around 10,000 living species of birds. Birds are a group of
+        warm-blooded vertebrate animals constituting the class Aves,
+        characterised by feathers, toothless beaked jaws, the laying of
+        hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a
+        strong yet lightweight skeleton. align="top" /> There are around 10,000
+        living species of birds. Birds are a group of warm-blooded vertebrate
+        animals constituting the class Aves, characterised by feathers,
+        toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic
+        rate, a four-chambered heart, and a strong yet lightweight skeleton.
+      </p>
+    </main>
+    <footer class="footer">
+      <p>&copy 2026</p>
+    </footer>
+
+    <script src="js/popup.js"></script>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("active");
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/slide.js"></script>
+  </body>
+</html>

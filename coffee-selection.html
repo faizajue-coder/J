@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bean & Brew Coffee Shop</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <!-- AOS.js -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+            rel="stylesheet">
+        <script
+            src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    </head>
+
+    <body>
+
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/icon.png" alt="Logo Icon"
+                        class="logo-icon">
+                    BeanBoutique
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                <ul class="menu" id="navMenu">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i>
+                            Home</a></li>
+                    <li><a href="coffee-selection.html">Coffee Selection</a></li>
+                    <li><a href="equipment.html">Brewing Equipment</a></li>
+                    <li>
+                        <a href="#">Services ⏷</a>
+                        <div class="dropdown">
+                            <a href="events.html">Events and Workshops</a>
+                            <a href="offers.html">Special Offers and
+                                Scriptions</a>
+
+                        </div>
+                    </li>
+                    <li><a href="cart.html"> &#128722 Shopping Cart</a>(<span id="cartCount">0</span>)</li>
+                </ul>
+              
+        </nav>
+        
+        <main class="coffee-container">
+            <div class="search-container">
+                    <input type="text" id="productSearch" class="searchInput" placeholder="Search..."
+                        onkeyup="filterItems()" />
+                    <!-- <button><i class="fa fa-search"></i></button> -->
+                </div>
+            </div>
+            <div class="coffee-grid">
+                <div class="coffee-card" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="800">
+                    <!-- <div class="coffee-card"> -->
+                    <img src="images/americano.png"
+                        alt="Americano" class="coffee-image">
+                    <div class="coffee-content">
+                        <h2 class="coffee-name">Espresso Coffee</h2>
+                        <span class="coffee-origin">Single Origin -
+                            Ethiopia</span>
+                        <p class="coffee-description">A floral and tea-like
+                            coffee with bright citrus notes, grown in the
+                            highlands of southern Ethiopia.</p>
+
+                        
+
+                    </div>
+                </div>
+                <div class="coffee-card" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="800">
+                    <!-- <div class="coffee-card"> -->
+                    <img src="images/cappuccino.png"
+                        alt="Americano" class="coffee-image">
+                    <div class="coffee-content">
+                        <h2 class="coffee-name">Cappuccino Coffee</h2>
+                        <span class="coffee-origin">Single Origin -
+                            Ethiopia</span>
+                        <p class="coffee-description">A floral and tea-like
+                            coffee with bright citrus notes, grown in the
+                            highlands of southern Ethiopia.</p>
+
+                    </div>
+                </div>
+                <div class="coffee-card" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="800">
+                    <!-- <div class="coffee-card"> -->
+                    <img src="images/espresso.png"
+                        alt="Americano" class="coffee-image">
+                    <div class="coffee-content">
+                        <h2 class="coffee-name">Americano Coffee</h2>
+                        <span class="coffee-origin">Single Origin -
+                            Ethiopia</span>
+                        <p class="coffee-description">A floral and tea-like
+                            coffee with bright citrus notes, grown in the
+                            highlands of southern Ethiopia.</p>
+
+                    </div>
+                </div>
+                 <div class="coffee-card" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="800">
+                    <!-- <div class="coffee-card"> -->
+                    <img src="images/espresso.png"
+                        alt="Americano" class="coffee-image">
+                    <div class="coffee-content">
+                        <h2 class="coffee-name">Americano Coffee</h2>
+                        <span class="coffee-origin">Single Origin -
+                            Ethiopia</span>
+                        <p class="coffee-description">A floral and tea-like
+                            coffee with bright citrus notes, grown in the
+                            highlands of southern Ethiopia.</p>
+
+                    </div>
+                </div>
+                 <div class="coffee-card" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="800">
+                    <!-- <div class="coffee-card"> -->
+                    <img src="images/espresso.png"
+                        alt="Americano" class="coffee-image">
+                    <div class="coffee-content">
+                        <h2 class="coffee-name">Americano Coffee</h2>
+                        <span class="coffee-origin">Single Origin -
+                            Ethiopia</span>
+                        <p class="coffee-description">A floral and tea-like
+                            coffee with bright citrus notes, grown in the
+                            highlands of southern Ethiopia.</p>
+
+                    </div>
+                </div>
+                 <div class="coffee-card" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="800">
+                    <!-- <div class="coffee-card"> -->
+                    <img src="images/espresso.png"
+                        alt="Americano" class="coffee-image">
+                    <div class="coffee-content">
+                        <h2 class="coffee-name">Americano Coffee</h2>
+                        <span class="coffee-origin">Single Origin -
+                            Ethiopia</span>
+                        <p class="coffee-description">A floral and tea-like
+                            coffee with bright citrus notes, grown in the
+                            highlands of southern Ethiopia.</p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p> &copy 2026</p>
+        </footer>
+        <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("active");
+        }  
+    </script>
+
+        <script>
+        AOS.init();
+        function filterItems() {
+            const search_input = document.getElementById('productSearch').value.toLowerCase();
+            const cards = document.querySelectorAll('.coffee-card');
+
+            cards.forEach(function(card) {
+                const cname = card.querySelector('.coffee-name').textContent.toLowerCase();
+               
+                if (cname.includes(search_input)) {
+      // Show card
+      card.style.display = "block";
+
+      matchCount++;
+    } else {
+      // Hide card
+      card.style.display = "none";
+    }
+            });
+        }
+    </script>
+</script>
+    </body>
+</html>

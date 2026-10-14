@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bean & Brew Coffee Shop</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <!-- AOS.js -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+            rel="stylesheet">
+        <script
+            src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    </head>
+
+    <body>
+
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/icon.png" alt="Logo Icon"
+                        class="logo-icon">
+                    BeanBoutique
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                <ul class="menu" id="navMenu">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i>
+                            Home</a></li>
+                    <li><a href="coffee-selection.html">Coffee
+                            Selection</a></li>
+                    <li><a href="equipment.html">Brewing Equipment</a></li>
+                    <li>
+                        <a href="#">Services ⏷</a>
+                        <div class="dropdown">
+                            <a href="events.html">Events and Workshops</a>
+                            <a href="offers.html">Special Offers and
+                                Scriptions</a>
+
+                        </div>
+                    </li>
+                    <li><button class="cart-btn" href="equipment.html"
+                            onclick="showCart()"> &#128722
+                            Shopping
+                            Cart</a>(<span
+                            id="cartCount">0</span>)</button></li>
+            </ul>
+
+        </nav>
+
+        <!-- Title -->
+        <section class="title-section">
+            <h1>Our Coffee Menu</h1>
+            <p>Choose your favorite coffee</p>
+            <div class="search-container">
+                <input type="text" id="itemSearch" class="searchInput"
+                    placeholder="Search..."
+                    onkeyup="filterItems()" />
+                <!-- <button><i class="fa fa-search"></i></button> -->
+            </div>
+        </section>
+
+        <!-- Equip Cards -->
+        <main class="equip-container">
+
+            <div class="equip-grid">
+                <div class="equip-card" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="800">
+                    <img src="images/equipment.webp" alt="ep1">
+                    <div class="equip-info">
+                        <h4 class="equip-name">Americano</h4>
+                        <p>sksjfksjfdkjskf ksjfk</p>
+                        <span class="price">100.00</span>
+                        <div class="quantity-box">
+                            <button
+                                onclick="changeQuantity(1,-1)">-</button>
+                            <span id="quantity-1">1</span>
+                            <button onclick="changeQuantity(1,1)">+</button>
+                        </div>
+                        <button class="add-cart-btn" onclick="addToCart(1)">Add
+                            to Cart </button>
+                    </div>
+
+                </div>
+
+                <div class="equip-card" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="800">
+                    <img src="images/maker.avif" alt="ep1">
+                    <div class="equip-info">
+                        <h4 class="equip-name">Cappunccnino</h4>
+                        <p>sksjfksjfdkjskf ksjfk</p>
+                        <span class="price">100.00</span>
+                        <div class="quantity-box">
+                            <button
+                                onclick="changeQuantity(2,-1)">-</button>
+                            <span id="quantity-2">1</span>
+                            <button
+                                onclick="changeQuantity(2,1)">+</button>
+                        </div>
+                        <button class="add-cart-btn"
+                            onclick="addToCart(2)">Add to Cart </button>
+                    </div>
+
+                </div>
+                <div class="equip-card" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="800">
+                    <img src="images/maker.avif" alt="ep1">
+                    <div class="equip-info">
+                        <h4 class="equip-name">Espresso</h4>
+                        <p>sksjfksjfdkjskf ksjfk</p>
+                        <span class="price">100.00</span>
+                        <div class="quantity-box">
+                            <button
+                                onclick="changeQuantity(3,-1)">-</button>
+                            <span id="quantity-3">1</span>
+                            <button
+                                onclick="changeQuantity(3,1)">+</button>
+                        </div>
+                        <button class="add-cart-btn"
+                            onclick="addToCart(3)">Add to Cart </button>
+                    </div>
+
+                </div>
+                <div class="equip-card" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="800">
+                    <img src="images/maker.avif" alt="ep1">
+                    <div class="equip-info">
+                        <h4 class="equip-name">AAA</h4>
+                        <p>sksjfksjfdkjskf ksjfk</p>
+                        <span class="price">100.00</span>
+                        <div class="quantity-box">
+                            <button
+                                onclick="changeQuantity(4,-1)">-</button>
+                            <span id="quantity-4">1</span>
+                            <button
+                                onclick="changeQuantity(4,1)">+</button>
+                        </div>
+                        <button class="add-cart-btn"
+                            onclick="addToCart(4)">Add to Cart </button>
+                    </div>
+
+                </div>
+
+                <!-- Coffee cards are generated by JavaScript -->
+            </div>
+        </main>
+
+        <!-- Shopping Cart -->
+        <div class="cart-modal" id="cartModal">
+
+            <div class="cart-content">
+
+                <div class="cart-header">
+                    <h2><i class="fa-solid fa-cart-shopping"></i> Your Cart</h2>
+
+                    <button class="close-btn" onclick="closeCart()">
+                        ×
+                    </button>
+                </div>
+
+                <div id="cartItems"></div>
+
+                <div class="cart-total">
+                    <h3>
+                        Total: $
+                        <span id="totalPrice">0.00</span>
+                    </h3>
+
+                    <button class="checkout-btn" onclick="checkout()">
+                        Checkout
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <p> &copy 2026</p>
+        </footer>
+
+        <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("active");
+
+        }
+             function filterItems() {
+            const input = document.getElementById('itemSearch').value.toLowerCase();
+            const cards = document.querySelectorAll('.equip-card');
+
+            cards.forEach(function(card) {
+                const name = card.querySelector('.equip-name').textContent.toLowerCase();
+                card.style.display = name.includes(input) ? 'block' : 'none';
+            });
+        }
+        
+        </script>
+        <script>
+        AOS.init();
+    </script>
+        <script src="js/cart1.js"></script>
+
+    </body>
+</html>
